@@ -1,75 +1,72 @@
-# &#x20;EduBridge – Connecting Learning with Real Life
+# EduBridge
 
-## &#x20;About the Project
+**Learn It. See It. Use It.**
 
-**EduBridge** is an educational website developed as part of a hackathon with the aim of connecting academic learning with real-world applications.
+EduBridge is a Flask + SQLite educational web application that connects school concepts with real-world applications.
 
-Students often study different subjects and concepts without knowing where or how they are used in everyday life. EduBridge bridges this gap by helping learners understand the practical importance of what they study.
+## Features
 
-Our goal is to make learning more meaningful, engaging, and relevant by connecting theoretical knowledge with real-life situations.
+- Premium responsive landing page
+- Topic library
+- Quick revision
+- Real-world use cases
+- How & When guidance
+- Interactive application questions
+- SQLite progress tracking
+- My Progress dashboard
+- Reset progress
+- Flask backend
+- Clean Jinja templates
+- Responsive mobile design
 
-## &#x20;Problem Statement
+## Folder structure
 
-Students frequently struggle to understand the practical purpose of academic concepts. They may memorize theories and formulas without knowing how that knowledge applies outside the classroom.
+```text
+EduBridge/
+├── app.py
+├── database.db          # created automatically on first run
+├── requirements.txt
+├── .gitignore
+├── README.md
+├── data/
+├── static/
+│   ├── style.css
+│   └── script.js
+└── templates/
+    ├── base.html
+    ├── index.html
+    ├── topic.html
+    ├── progress.html
+    └── 404.html
+```
 
-This can make learning feel less engaging and disconnected from real-world needs.
+## Run
 
-## Our Solution
+### 1. Create/activate virtual environment
 
-EduBridge provides a platform where students can explore how academic concepts are applied in real life.
+Windows:
 
-The website aims to help students:
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
 
-- Understand the practical purpose of what they learn.
-- Connect theoretical concepts with real-world situations.
-- Discover how academic knowledge is used in everyday life.
-- Develop a better understanding of subjects beyond textbooks.
+### 2. Install Flask
 
-## Key Highlights
+```bash
+pip install -r requirements.txt
+```
 
-- **Practical Learning:** Focuses on the real-world relevance of academic concepts.
-- **Real-Life Applications:** Connects classroom learning with everyday situations.
-- **Concept Awareness:** Helps students understand why they learn particular topics.
-- **Purpose-Driven Education:** Encourages meaningful learning instead of memorization alone.
+### 3. Start
 
-## &#x20;Technologies Used
+```bash
+python app.py
+```
 
-Add the technologies used to build the website:
+### 4. Open
 
-- HTML
-- CSS
-- JavaScript
+```text
+http://127.0.0.1:5000
+```
 
-*Update this list according to the actual technologies used in the project.*
-
-## &#x20;Getting Started
-
-1. Clone the repository:
-
-   ```bash
-   git clone YOUR_REPOSITORY_URL
-   ```
-
-2. Open the project folder.
-
-3. Open `index.html` in your web browser, if the project uses a standard HTML, CSS, and JavaScript setup.
-
-## Hackathon Project
-
-EduBridge was developed as a hackathon project to explore an important question in education:
-
-**"Where will I use what I am learning in real life?"**
-
-The project focuses on making education more practical by helping students see the connection between academic knowledge and the world around them.
-
-## &#x20;Future Scope
-
-- Add more subjects and academic concepts.
-- Include more real-world examples and practical use cases.
-- Introduce interactive learning activities.
-- Expand the platform to support more students and learning needs.
-
----
-
-&#x20;If you find this project interesting, consider giving the repository a star!
-
+The SQLite database and tables are created automatically.
